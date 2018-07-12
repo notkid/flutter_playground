@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/gallery/demos.dart';
+import 'package:flutter_playground/gallery/home.dart';
 
 class Gallery extends StatefulWidget {
   @override
@@ -23,10 +24,7 @@ class _GalleryState extends State<Gallery> {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: _buildRoutes(),
-      home: FloatingActionButton(
-        child: Text('1212'),
-        onPressed: (){Navigator.pushNamed(context, 'persistentSliver');},
-      )
+      home: Home(),
     );
   }
 }
