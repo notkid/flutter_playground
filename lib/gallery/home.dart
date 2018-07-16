@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/demo/persisitent_sliver.dart';
+import 'package:flutter_playground/demo/all.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -7,7 +7,8 @@ class Home extends StatelessWidget {
     return FloatingActionButton(
       child: Text('1212'),
       onPressed: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => new PersistentSliverDemo()));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => ThemeDemo()));
       },
     );
   }

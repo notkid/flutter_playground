@@ -23,7 +23,7 @@ class _PersistentSliverDemoState extends State<PersistentSliverDemo>
     with SingleTickerProviderStateMixin {
   CarouselSlider instance;
   TabController _tabController;
-
+  GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   void initState() {
     // TODO: implement initState
@@ -53,6 +53,7 @@ class _PersistentSliverDemoState extends State<PersistentSliverDemo>
     return SafeArea(
       top: true,
       child: Scaffold(
+        key: _scaffoldKey,
         // appBar: AppBar(
         //   primary: true,
         //   title: Text('2323'),
@@ -127,7 +128,12 @@ class _PersistentSliverDemoState extends State<PersistentSliverDemo>
                 child: Text('bottomSheet'))),
         resizeToAvoidBottomPadding: false,
         floatingActionButton: FloatingActionButton(
-          onPressed: (){},
+          onPressed: (){
+            Scaffold.of(context).showSnackBar(SnackBar(content: Text('1212'),));
+            // _scaffoldKey.currentState.showSnackBar(
+            //   SnackBar(content: Text('Eddddd'),),
+            // );
+          },
           child: Icon(Icons.add),
         ),
         persistentFooterButtons: <Widget>[

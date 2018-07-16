@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/demo/stepper_demo.dart';
 import '../demo/all.dart';
 
 class GalleryDemoCategory {
@@ -27,6 +28,11 @@ class GalleryDemoCategory {
 
 const GalleryDemoCategory _kSliver = const GalleryDemoCategory._(
   name: 'Sliver',
+  icon: Icon(Icons.face)
+);
+
+const GalleryDemoCategory _kTheme = const GalleryDemoCategory._(
+  name: 'Theme',
   icon: Icon(Icons.face)
 );
 
@@ -64,6 +70,22 @@ List<GalleryDemo> _buildGalleryDemos() {
       category: _kSliver,
       routeName: PersistentSliverDemo.routeName,
       buildRoute: (BuildContext context) => new PersistentSliverDemo()
+    ),
+    GalleryDemo(
+      title: 'themeDemo',
+      subtitle: 'basic usage of theme',
+      icon: Icon(Icons.explore),
+      category: _kTheme,
+      routeName: ThemeDemo.routeName,
+      buildRoute: (BuildContext context) => new ThemeDemo()
+    ),
+    GalleryDemo(
+      title: 'stepper',
+      subtitle: 'basic usage of theme',
+      icon: Icon(Icons.explore),
+      category: _kTheme,
+      routeName: StepperDemo.routeName,
+      buildRoute: (BuildContext context) => new StepperDemo()
     ),
   ];
   return galleryDemos;
