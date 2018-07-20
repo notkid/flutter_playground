@@ -87,6 +87,22 @@ List<GalleryDemo> _buildGalleryDemos() {
       routeName: StepperDemo.routeName,
       buildRoute: (BuildContext context) => new StepperDemo()
     ),
+    GalleryDemo(
+      title: 'stepper',
+      subtitle: 'basic usage of theme',
+      icon: Icon(Icons.explore),
+      category: _kTheme,
+      routeName: AnimatedListSample.routeName,
+      buildRoute: (BuildContext context) => new AnimatedListSample()
+    ),
+    GalleryDemo(
+      title: 'heroDemo',
+      subtitle: 'basic usage of hero',
+      icon: Icon(Icons.explore),
+      category: _kTheme,
+      routeName: HeroDemo.routeName,
+      buildRoute: (BuildContext context) => new HeroDemo()
+    ),
   ];
   return galleryDemos;
 }
