@@ -119,6 +119,14 @@ List<GalleryDemo> _buildGalleryDemos() {
       routeName: TransformDemo.routeName,
       buildRoute: (BuildContext context) => new TransformDemo()
     ),
+    GalleryDemo(
+      title: 'SegmentDemo',
+      subtitle: 'basic usage of hero',
+      icon: Icon(Icons.explore),
+      category: _kTheme,
+      routeName: SegmentDemo.routeName,
+      buildRoute: (BuildContext context) => new SegmentDemo()
+    ),
   ];
   return galleryDemos;
 }

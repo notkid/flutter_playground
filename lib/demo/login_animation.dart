@@ -111,7 +111,7 @@ class LoginScreenState extends State<LoginScreen>
       params['username'] = _usernameKey.currentState.value;
       params['password'] = _passwordformKey.currentState.value;
 
-      // NetUtils.get("http://ncoppo.com:1200/user/login",  (data) async{
+      // NetUtils.get("",  (data) async{
       //   Map<String, dynamic> map = json.decode(data);
       //   if (map["success"]) {
       //     setState(() {
@@ -301,7 +301,7 @@ class LoginScreenState extends State<LoginScreen>
               ),
               child: new TextFormField(
                 key: _passwordformKey,
-                initialValue: "adminadmin",
+                initialValue: "",
                 obscureText: true,
                 style: const TextStyle(
                   color: Colors.white,
