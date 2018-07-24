@@ -32,7 +32,7 @@ class PhotoHero extends StatelessWidget {
 class HeroDemo extends StatelessWidget {
   static const String routeName = '/HeroDemo';
   Widget build(BuildContext context) {
-    timeDilation = 5.0; // 1.0 means normal animation speed.
+    timeDilation = 2.0; // 1.0 means normal animation speed.
 
     return Scaffold(
       appBar: AppBar(

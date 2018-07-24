@@ -103,6 +103,22 @@ List<GalleryDemo> _buildGalleryDemos() {
       routeName: HeroDemo.routeName,
       buildRoute: (BuildContext context) => new HeroDemo()
     ),
+    GalleryDemo(
+      title: 'loginAnimation',
+      subtitle: 'basic usage of hero',
+      icon: Icon(Icons.explore),
+      category: _kTheme,
+      routeName: LoginScreen.routeName,
+      buildRoute: (BuildContext context) => new LoginScreen()
+    ),
+    GalleryDemo(
+      title: 'TransformDemo',
+      subtitle: 'basic usage of hero',
+      icon: Icon(Icons.explore),
+      category: _kTheme,
+      routeName: TransformDemo.routeName,
+      buildRoute: (BuildContext context) => new TransformDemo()
+    ),
   ];
   return galleryDemos;
 }
