@@ -6,3 +6,4 @@ export 'hero_demo.dart';
 export 'login_animation.dart';
 export 'transform_demo.dart';
 export 'segment_demo.dart';
+export 'watermark_demo.dart';

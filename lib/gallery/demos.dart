@@ -127,6 +127,14 @@ List<GalleryDemo> _buildGalleryDemos() {
       routeName: SegmentDemo.routeName,
       buildRoute: (BuildContext context) => new SegmentDemo()
     ),
+    GalleryDemo(
+      title: 'WatermarkDemo',
+      subtitle: 'basic usage of hero',
+      icon: Icon(Icons.explore),
+      category: _kTheme,
+      routeName: WatermarkDemo.routeName,
+      buildRoute: (BuildContext context) => new WatermarkDemo()
+    ),
   ];
   return galleryDemos;
 }
